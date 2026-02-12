@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.filters {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+}
+
+.filterSelect {
+    padding: var(--spacing-2) var(--spacing-4);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background-color: var(--surface);
+    font-size: 0.875rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: var(--spacing-4);
+    border-bottom: 2px solid var(--border);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.table td {
+    padding: var(--spacing-4);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-main);
+    font-size: 0.875rem;
+    vertical-align: top;
+}
+
+.issueCell {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.issueTitle {
+    font-weight: 500;
+}
+
+.issueDesc {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.actionPanel {
+    background-color: var(--background);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-2);
+}
+
+.commentInput {
+    width: 100%;
+    padding: var(--spacing-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-2);
+}

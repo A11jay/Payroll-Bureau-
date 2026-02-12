@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--surface);
+}
+
+.leftPanel {
+    flex: 1;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-8);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.brandPattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 20%);
+}
+
+.branding {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 400px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-4);
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.rightPanel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-8);
+    background-color: var(--background);
+}
+
+.authCard {
+    width: 100%;
+    max-width: 400px;
+    background: var(--surface);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border);
+}
+
+.header {
+    margin-bottom: var(--spacing-6);
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-2);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: var(--spacing-4) 0;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--border);
+}
+
+.divider span {
+    padding: 0 var(--spacing-2);
+}
+
+.switchMode {
+    margin-top: var(--spacing-6);
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.link {
+    color: var(--primary);
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 4px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

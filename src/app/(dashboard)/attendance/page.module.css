@@ -1,0 +1,215 @@
+.container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.statCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.statIcon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface-hover);
+    color: var(--primary);
+}
+
+.statInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 8px;
+}
+
+.tab {
+    padding: 12px 24px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    color: var(--foreground);
+    background: var(--surface-hover);
+}
+
+.tab.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.contentArea {
+    min-height: 400px;
+}
+
+.requestList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.requestCard {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.userInfo h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.userInfo p {
+    margin: 4px 0 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    text-align: left;
+}
+
+.detailItem label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.detailItem span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--foreground);
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.attendanceTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendanceTable th,
+.attendanceTable td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.attendanceTable th {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.statusBadge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.statusPresent {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+.statusAbsent {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+}
+
+.statusLate {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+}
+
+.statusOnLeave {
+    background: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
+}

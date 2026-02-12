@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-6);
+}
+
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.checklistItem {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    background-color: var(--background);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.checklistContent {
+    flex: 1;
+}
+
+.checkTitle {
+    font-weight: 600;
+    margin-bottom: var(--spacing-1);
+}
+
+.checkDesc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.reportList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.reportItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.reportItem:hover {
+    background-color: var(--background);
+    border-color: var(--primary);
+}
+
+.reportName {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.auditTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.auditTable th {
+    text-align: left;
+    padding: var(--spacing-3) var(--spacing-4);
+    border-bottom: 2px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.auditTable td {
+    padding: var(--spacing-3) var(--spacing-4);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--text-main);
+}

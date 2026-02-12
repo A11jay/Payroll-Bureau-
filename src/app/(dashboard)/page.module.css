@@ -1,0 +1,221 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--spacing-2);
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-1);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+}
+
+.metricCard {
+    padding: var(--spacing-4);
+}
+
+.metricHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-2);
+}
+
+.metricLabel {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.metricValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-1);
+}
+
+.metricChange {
+    font-size: 0.75rem;
+    color: var(--success);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-6);
+}
+
+.columnMain,
+.columnSide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-4) 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.listItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.listItem:first-child {
+    padding-top: 0;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.itemName {
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.itemDate {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.itemMeta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.usageTrack {
+    width: 100px;
+    height: 6px;
+    background-color: var(--background);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: var(--radius-full);
+}
+
+.approvalItem {
+    padding: var(--spacing-4);
+    background-color: var(--background);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-3);
+    border: 1px solid var(--border);
+}
+
+.approvalItem:last-child {
+    margin-bottom: 0;
+}
+
+.approvalHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-2);
+}
+
+.approvalType {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.approvalTime {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.approvalDetails {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-3);
+}
+
+.approvalAmount {
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.approvalActions {
+    display: flex;
+    gap: var(--spacing-2);
+    justify-content: flex-end;
+}
+
+.exceptionTitle {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.activityFeed {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.activityItem {
+    display: flex;
+    gap: var(--spacing-3);
+}
+
+.activityDot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.activityContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.activityText {
+    font-size: 0.875rem;
+    color: var(--text-main);
+}
+
+.activityTime {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}

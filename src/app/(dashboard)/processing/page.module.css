@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.selectionGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+}
+
+.stepContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-8);
+    gap: var(--spacing-6);
+}
+
+.progressContainer {
+    width: 100%;
+    max-width: 600px;
+}
+
+.progressBarTrack {
+    height: 8px;
+    background-color: var(--border);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin-bottom: var(--spacing-2);
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: var(--radius-full);
+    transition: width 0.3s ease;
+}
+
+.progressStatus {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.logContainer {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    background-color: #1e293b;
+    /* Slate 800 */
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4);
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: #94a3b8;
+    /* Slate 400 */
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.logItem {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.logSuccess {
+    color: #4ade80;
+}
+
+.logInfo {
+    color: #60a5fa;
+}
+
+.logWarning {
+    color: #facc15;
+}
+
+.summaryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+}
+
+.statCard {
+    text-align: center;
+    padding: var(--spacing-4);
+}
+
+.statValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: var(--spacing-4);
+    border-bottom: 2px solid var(--border);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.table td {
+    padding: var(--spacing-4);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-main);
+    font-size: 0.875rem;
+}
+
+.breakdownRow {
+    background-color: var(--background);
+}
+
+.amount {
+    font-family: monospace;
+    font-weight: 500;
+}
